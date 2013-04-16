@@ -8,8 +8,6 @@
 			values.push([ $(this), sortfn($(this)) ]);
 		});
 
-		console.log(values);
-
 		values.sort(function(a,b) {
 			return a[1] > b[1]  ? 1
 				:  a[1] == b[1] ? 0
