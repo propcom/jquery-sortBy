@@ -8,7 +8,7 @@
 			return [ $(o), sortfn($(o)) ];
 		});
 
-		$.sort(values, function(a,b) {
+		values.sort(function(a,b) {
 			return a[1] > b[1]  ? 1
 				:  a[1] == b[1] ? 0
 				:                -1;
