@@ -1,6 +1,5 @@
-# sortBy #
+# sortBy - a jQuery plugin#
 
-## a jQuery plugin##
 
 This plugin allows you to easily sort a bunch of items using a simple function.
 
@@ -28,4 +27,3 @@ accordingly.
 
 1. Allow specifying of things to sort within the selected things
 2. Iterate over the selector to sort many sets with one call
-3. Don't fall over if the Array class doesn't have sort()
