@@ -4,11 +4,11 @@
 		var values = [],
 			$self = this;
 
-		this.children().each(function(i,o) {
-			values.push([ $(o), sortfn($(o)) ]);
+		values = this.children().map(function(o) {
+			return [ $(o), sortfn($(o)) ];
 		});
 
-		values.sort(function(a,b) {
+		$.sort(values, function(a,b) {
 			return a[1] > b[1]  ? 1
 				:  a[1] == b[1] ? 0
 				:                -1;
