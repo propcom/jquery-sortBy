@@ -35,11 +35,13 @@
 			<button class="btn" id="sort-by-orig">Reset sorting</button>
 		</div>
 
-		[% FOREACH country = countries %]
-			<div class="span9" data-order="[% LOOP.count %]">
-				<h4>[% country.value %]</h4>
-				<p>[% country.key %]</p>
-			</div>
-		[% END %]
+		<div id="sortme">
+			[% FOREACH country = countries %]
+				<div class="span9" data-order="[% loop.count %]">
+					<h4>[% country.value %]</h4>
+					<p>[% country.key %]</p>
+				</div>
+			[% END %]
+		</div>
 	</body>
 </html>
