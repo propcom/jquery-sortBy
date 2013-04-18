@@ -7,12 +7,17 @@
 		<script>
 			// Get what we consider the name of an element so we can sort by name
 			function name(a) {
-				return $(a).find('h1').html();
+				return $(a).find('h4').html();
 			}
 
 			// Return the original ordering of element a
 			function originalOrder(a) {
 				return $(a).data('order');
+			}
+			
+			// Get the code obv
+			function code(a) {
+				return $(a).find('p').html();
 			}
 
 			$(function() {
@@ -25,6 +30,11 @@
 					$('#sortme').sortBy(originalOrder);
 					return false;
 				});
+
+				$('#sort-by-code').on('click', function() {
+					$('#sortme').sortBy(code);
+					return false;
+				});
 			});
 		</script>
 	</head>
@@ -32,14 +42,15 @@
 	<body>
 		<div class="span9">
 			<button class="btn" id="sort-by-name">Sort by name</button>
+			<button class="btn" id="sort-by-code">Sort by code</button>
 			<button class="btn" id="sort-by-orig">Reset sorting</button>
 		</div>
 
 		<div id="sortme">
 			[% FOREACH country = countries %]
 				<div class="span9" data-order="[% loop.count %]">
-					<h4>[% country.value %]</h4>
-					<p>[% country.key %]</p>
+					<h4>[% country.item(1) %]</h4>
+					<p>[% country.item(0) %]</p>
 				</div>
 			[% END %]
 		</div>

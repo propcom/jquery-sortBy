@@ -247,6 +247,9 @@ my %countries = (
 'PS','Palestinian Territory, Occupied',
 );
 my $template = Template->new();
+
+# Turn the hash into an array because I think I'm the only person ever who
+# actually wants the happenstantial randomisation of hashes.
 $template->process(
-	'index.tt2', { countries => \%countries }
+	'index.tt2', { countries => [ map { [$_, $countries{$_}] } keys %countries ] }
 );
