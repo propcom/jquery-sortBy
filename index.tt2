@@ -37,7 +37,7 @@
 
 		[% FOREACH country = countries %]
 			<div class="span9" data-order="[% LOOP.count %]">
-				<h1>[% country.value %]</h1>
+				<h4>[% country.value %]</h4>
 				<p>[% country.key %]</p>
 			</div>
 		[% END %]
