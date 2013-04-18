@@ -1,0 +1,1235 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet" />
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="jquery-sortby.js"></script>
+		<script>
+			// Get what we consider the name of an element so we can sort by name
+			function name(a) {
+				return $(a).find('h1').html();
+			}
+
+			// Return the original ordering of element a
+			function originalOrder(a) {
+				return $(a).data('order');
+			}
+
+			$(function() {
+				$('#sort-by-name').on('click', function() {
+					$('#sortme').sortBy(name);
+					return false;
+				});
+
+				$('#sort-by-orig').on('click', function() {
+					$('#sortme').sortBy(originalOrder);
+					return false;
+				});
+			});
+		</script>
+	</head>
+
+	<body>
+		<div class="span9">
+			<button class="btn" id="sort-by-name">Sort by name</button>
+			<button class="btn" id="sort-by-orig">Reset sorting</button>
+		</div>
+
+		
+			<div class="span9" data-order="">
+				<h1>Andorra</h1>
+				<p>AD</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>United Arab Emirates</h1>
+				<p>AE</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Afghanistan</h1>
+				<p>AF</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Antigua and Barbuda</h1>
+				<p>AG</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Anguilla</h1>
+				<p>AI</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Albania</h1>
+				<p>AL</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Armenia</h1>
+				<p>AM</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Netherlands Antilles</h1>
+				<p>AN</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Angola</h1>
+				<p>AO</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Antarctica</h1>
+				<p>AQ</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Argentina</h1>
+				<p>AR</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>American Samoa</h1>
+				<p>AS</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Austria</h1>
+				<p>AT</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Australia</h1>
+				<p>AU</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Aruba</h1>
+				<p>AW</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Azerbaijan</h1>
+				<p>AZ</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Bosnia and Herzegovina</h1>
+				<p>BA</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Barbados</h1>
+				<p>BB</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Bangladesh</h1>
+				<p>BD</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Belgium</h1>
+				<p>BE</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Burkina Faso</h1>
+				<p>BF</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Bulgaria</h1>
+				<p>BG</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Bahrain</h1>
+				<p>BH</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Burundi</h1>
+				<p>BI</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Benin</h1>
+				<p>BJ</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Bermuda</h1>
+				<p>BM</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Brunei Darussalam</h1>
+				<p>BN</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Bolivia</h1>
+				<p>BO</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Brazil</h1>
+				<p>BR</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>The Bahamas</h1>
+				<p>BS</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Bhutan</h1>
+				<p>BT</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Bouvet Island</h1>
+				<p>BV</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Botswana</h1>
+				<p>BW</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Belarus</h1>
+				<p>BY</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Belize</h1>
+				<p>BZ</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Canada</h1>
+				<p>CA</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Cocos (Keeling) Islands</h1>
+				<p>CC</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Congo, Democratic Republic of the</h1>
+				<p>CD</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Central African Republic</h1>
+				<p>CF</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Congo, Republic of the</h1>
+				<p>CG</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Switzerland</h1>
+				<p>CH</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Cote d'Ivoire</h1>
+				<p>CI</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Cook Islands</h1>
+				<p>CK</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Chile</h1>
+				<p>CL</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Cameroon</h1>
+				<p>CM</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>China</h1>
+				<p>CN</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Colombia</h1>
+				<p>CO</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Costa Rica</h1>
+				<p>CR</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Cuba</h1>
+				<p>CU</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Cape Verde</h1>
+				<p>CV</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Christmas Island</h1>
+				<p>CX</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Cyprus</h1>
+				<p>CY</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Czech Republic</h1>
+				<p>CZ</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Germany</h1>
+				<p>DE</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Djibouti</h1>
+				<p>DJ</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Denmark</h1>
+				<p>DK</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Dominica</h1>
+				<p>DM</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Dominican Republic</h1>
+				<p>DO</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Algeria</h1>
+				<p>DZ</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Ecuador</h1>
+				<p>EC</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Estonia</h1>
+				<p>EE</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Egypt</h1>
+				<p>EG</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Western Sahara</h1>
+				<p>EH</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Eritrea</h1>
+				<p>ER</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Spain</h1>
+				<p>ES</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Ethiopia</h1>
+				<p>ET</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Finland</h1>
+				<p>FI</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Fiji</h1>
+				<p>FJ</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Falkland Islands (Islas Malvinas)</h1>
+				<p>FK</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Micronesia, Federated States of</h1>
+				<p>FM</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Faroe Islands</h1>
+				<p>FO</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>France</h1>
+				<p>FR</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Gabon</h1>
+				<p>GA</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>United Kingdom</h1>
+				<p>GB</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Grenada</h1>
+				<p>GD</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Georgia</h1>
+				<p>GE</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>French Guiana</h1>
+				<p>GF</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Ghana</h1>
+				<p>GH</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Gibraltar</h1>
+				<p>GI</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Greenland</h1>
+				<p>GL</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>The Gambia</h1>
+				<p>GM</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Guinea</h1>
+				<p>GN</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Guadeloupe</h1>
+				<p>GP</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Equatorial Guinea</h1>
+				<p>GQ</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Greece</h1>
+				<p>GR</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>South Georgia and the South Sandwich Islands</h1>
+				<p>GS</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Guatemala</h1>
+				<p>GT</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Guam</h1>
+				<p>GU</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Guinea-Bissau</h1>
+				<p>GW</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Guyana</h1>
+				<p>GY</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Hong Kong (SAR)</h1>
+				<p>HK</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Heard Island and McDonald Islands</h1>
+				<p>HM</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Honduras</h1>
+				<p>HN</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Croatia</h1>
+				<p>HR</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Haiti</h1>
+				<p>HT</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Hungary</h1>
+				<p>HU</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Indonesia</h1>
+				<p>ID</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Ireland</h1>
+				<p>IE</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Israel</h1>
+				<p>IL</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>India</h1>
+				<p>IN</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>British Indian Ocean Territory</h1>
+				<p>IO</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Iraq</h1>
+				<p>IQ</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Iran</h1>
+				<p>IR</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Iceland</h1>
+				<p>IS</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Italy</h1>
+				<p>IT</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Jamaica</h1>
+				<p>JM</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Jordan</h1>
+				<p>JO</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Japan</h1>
+				<p>JP</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Kenya</h1>
+				<p>KE</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Kyrgyzstan</h1>
+				<p>KG</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Cambodia</h1>
+				<p>KH</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Kiribati</h1>
+				<p>KI</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Comoros</h1>
+				<p>KM</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Saint Kitts and Nevis</h1>
+				<p>KN</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Korea, North</h1>
+				<p>KP</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Korea, South</h1>
+				<p>KR</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Kuwait</h1>
+				<p>KW</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Cayman Islands</h1>
+				<p>KY</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Kazakhstan</h1>
+				<p>KZ</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Laos</h1>
+				<p>LA</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Lebanon</h1>
+				<p>LB</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Saint Lucia</h1>
+				<p>LC</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Liechtenstein</h1>
+				<p>LI</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Sri Lanka</h1>
+				<p>LK</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Liberia</h1>
+				<p>LR</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Lesotho</h1>
+				<p>LS</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Lithuania</h1>
+				<p>LT</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Luxembourg</h1>
+				<p>LU</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Latvia</h1>
+				<p>LV</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Libya</h1>
+				<p>LY</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Morocco</h1>
+				<p>MA</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Monaco</h1>
+				<p>MC</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Moldova</h1>
+				<p>MD</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Madagascar</h1>
+				<p>MG</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Marshall Islands</h1>
+				<p>MH</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Macedonia, The Former Yugoslav Republic of</h1>
+				<p>MK</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Mali</h1>
+				<p>ML</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Burma</h1>
+				<p>MM</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Mongolia</h1>
+				<p>MN</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Macao</h1>
+				<p>MO</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Northern Mariana Islands</h1>
+				<p>MP</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Martinique</h1>
+				<p>MQ</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Mauritania</h1>
+				<p>MR</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Montserrat</h1>
+				<p>MS</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Malta</h1>
+				<p>MT</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Mauritius</h1>
+				<p>MU</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Maldives</h1>
+				<p>MV</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Malawi</h1>
+				<p>MW</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Mexico</h1>
+				<p>MX</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Malaysia</h1>
+				<p>MY</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Mozambique</h1>
+				<p>MZ</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Namibia</h1>
+				<p>NA</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>New Caledonia</h1>
+				<p>NC</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Niger</h1>
+				<p>NE</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Norfolk Island</h1>
+				<p>NF</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Nigeria</h1>
+				<p>NG</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Nicaragua</h1>
+				<p>NI</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Netherlands</h1>
+				<p>NL</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Norway</h1>
+				<p>NO</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Nepal</h1>
+				<p>NP</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Nauru</h1>
+				<p>NR</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Niue</h1>
+				<p>NU</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>New Zealand</h1>
+				<p>NZ</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Oman</h1>
+				<p>OM</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Panama</h1>
+				<p>PA</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Peru</h1>
+				<p>PE</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>French Polynesia</h1>
+				<p>PF</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Papua New Guinea</h1>
+				<p>PG</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Philippines</h1>
+				<p>PH</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Pakistan</h1>
+				<p>PK</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Poland</h1>
+				<p>PL</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Saint Pierre and Miquelon</h1>
+				<p>PM</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Pitcairn Islands</h1>
+				<p>PN</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Puerto Rico</h1>
+				<p>PR</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Palestinian Territory, Occupied</h1>
+				<p>PS</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Portugal</h1>
+				<p>PT</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Palau</h1>
+				<p>PW</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Paraguay</h1>
+				<p>PY</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Qatar</h1>
+				<p>QA</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>R</h1>
+				<p>RE</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Romania</h1>
+				<p>RO</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Russia</h1>
+				<p>RU</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Rwanda</h1>
+				<p>RW</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Saudi Arabia</h1>
+				<p>SA</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Solomon Islands</h1>
+				<p>SB</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Seychelles</h1>
+				<p>SC</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Sudan</h1>
+				<p>SD</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Sweden</h1>
+				<p>SE</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Singapore</h1>
+				<p>SG</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Saint Helena</h1>
+				<p>SH</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Slovenia</h1>
+				<p>SI</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Svalbard</h1>
+				<p>SJ</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Slovakia</h1>
+				<p>SK</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Sierra Leone</h1>
+				<p>SL</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>San Marino</h1>
+				<p>SM</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Senegal</h1>
+				<p>SN</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Somalia</h1>
+				<p>SO</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Suriname</h1>
+				<p>SR</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>S</h1>
+				<p>ST</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>El Salvador</h1>
+				<p>SV</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Syria</h1>
+				<p>SY</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Swaziland</h1>
+				<p>SZ</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Turks and Caicos Islands</h1>
+				<p>TC</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Chad</h1>
+				<p>TD</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>French Southern and Antarctic Lands</h1>
+				<p>TF</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Togo</h1>
+				<p>TG</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Thailand</h1>
+				<p>TH</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Tajikistan</h1>
+				<p>TJ</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Tokelau</h1>
+				<p>TK</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>East Timor</h1>
+				<p>TL</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Turkmenistan</h1>
+				<p>TM</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Tunisia</h1>
+				<p>TN</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Tonga</h1>
+				<p>TO</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Turkey</h1>
+				<p>TR</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Trinidad and Tobago</h1>
+				<p>TT</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Tuvalu</h1>
+				<p>TV</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Taiwan</h1>
+				<p>TW</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Tanzania</h1>
+				<p>TZ</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Ukraine</h1>
+				<p>UA</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Uganda</h1>
+				<p>UG</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>United States Minor Outlying Islands</h1>
+				<p>UM</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>United States</h1>
+				<p>US</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Uruguay</h1>
+				<p>UY</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Uzbekistan</h1>
+				<p>UZ</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Holy See (Vatican City)</h1>
+				<p>VA</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Saint Vincent and the Grenadines</h1>
+				<p>VC</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Venezuela</h1>
+				<p>VE</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>British Virgin Islands</h1>
+				<p>VG</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Virgin Islands</h1>
+				<p>VI</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Vietnam</h1>
+				<p>VN</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Vanuatu</h1>
+				<p>VU</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Wallis and Futuna</h1>
+				<p>WF</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Samoa</h1>
+				<p>WS</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Yemen</h1>
+				<p>YE</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Mayotte</h1>
+				<p>YT</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Yugoslavia</h1>
+				<p>YU</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>South Africa</h1>
+				<p>ZA</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Zambia</h1>
+				<p>ZM</p>
+			</div>
+		
+			<div class="span9" data-order="">
+				<h1>Zimbabwe</h1>
+				<p>ZW</p>
+			</div>
+		
+	</body>
+</html>

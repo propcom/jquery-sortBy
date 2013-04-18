@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet" />
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="jquery-sortby.js"></script>
+		<script>
+			// Get what we consider the name of an element so we can sort by name
+			function name(a) {
+				return $(a).find('h1').html();
+			}
+
+			// Return the original ordering of element a
+			function originalOrder(a) {
+				return $(a).data('order');
+			}
+
+			$(function() {
+				$('#sort-by-name').on('click', function() {
+					$('#sortme').sortBy(name);
+					return false;
+				});
+
+				$('#sort-by-orig').on('click', function() {
+					$('#sortme').sortBy(originalOrder);
+					return false;
+				});
+			});
+		</script>
+	</head>
+
+	<body>
+		<div class="span9">
+			<button class="btn" id="sort-by-name">Sort by name</button>
+			<button class="btn" id="sort-by-orig">Reset sorting</button>
+		</div>
+
+		[% FOREACH country = countries %]
+			<div class="span9" data-order="[% LOOP.count %]">
+				<h1>[% country.value %]</h1>
+				<p>[% country.key %]</p>
+			</div>
+		[% END %]
+	</body>
+</html>
